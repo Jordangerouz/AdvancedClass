@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Variables ------------------
+$Main-Yellow: rgb(255, 255, 0);
+$hover-Yellow: rgb(77, 77, 0);
+$font:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+// MixIns ---------------------
+@mixin dunes {
+    background-image: url(/assets/dunes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;}
+@mixin tree {
+    background-image: url(/assets/heroImage.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;}
+@mixin blur {
+    background-image: url(/assets/blurry.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+@mixin link {
+    text-decoration: none;
+    color: $Main-Yellow;
+    text-transform: uppercase;
+    font-family:$font;
+}
+@mixin text-field {
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.37);
+}
+
+// HOME PAGE START ------------
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    img {
+        width: 100%;
+    }
+     a {
+        text-decoration: none;
+        color: $Main-Yellow;
+        text-transform: uppercase;
+        font-family:$font;
+    }
+    #enter {
+        font-size: 9rem;
+        position: absolute;
+        top: 100px;
+        left: 300px;
+        cursor: pointer;
+    }
+    #enter:hover {
+        color:$hover-Yellow;
+    }
+    #about {
+        font-size: 1.9rem;
+        position: absolute;
+        top: 700px;
+        left: 1600px;
+    }
+    #about:hover {
+        color: $hover-Yellow;
+    }
+
+}
+// HOME PAGE END --------------
+
+// DUNE PAGE START ------------
+
+.dunes {
+    @include dunes;
+    display: flex;
+    flex-direction: column;
+    a {
+        @include link;
+    }
+    a:hover {
+        color: $hover-Yellow;
+    }
+    .text {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            color: white;
+            font-size: 2rem;
+        }
+    }
+    .options {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+        a {
+            font-size: 2rem;
+            border: 5px solid black;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.377);
+        }
+        a:hover {
+            border: 5px solid white;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+// DUNE PAGE END --------------
+
+// ABOUT PAGE START -----------
+
+.about-text {
+    @include dunes;
+    
+    a {
+        @include link;
+    }
+    a:hover {
+        color: $hover-Yellow;
+    }
+    #about-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    p {
+        color: white;
+        font-size: 2rem;
+        background: rgba(0, 0, 0, 0.37);
+    
+    }
+    }
+    
+}
+
+// ABOUT PAGE END -------------
+
+// GO PAGE START --------------
+
+.go {
+    @include tree;
+    a {
+        @include link;
+    }
+    a:hover {
+        color: $hover-Yellow;
+    }
+    #go-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        p {
+            @include text-field;
+        }
+    }
+}
+
+// GO PAGE END ----------------
+
+// RESTING START --------------
+
+.resting {
+    @include blur;
+    a {
+        @include link;
+    }
+    a:hover {
+        color: $hover-Yellow;
+    }
+    #rest-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        p {
+            @include text-field;
+            width: 80%;
+        }
+    }
+
+}
+
+// RESTING END ----------------

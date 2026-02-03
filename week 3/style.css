@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.hero img {
+  width: 100%;
+}
+.hero a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hero #enter {
+  font-size: 9rem;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  cursor: pointer;
+}
+.hero #enter:hover {
+  color: rgb(77, 77, 0);
+}
+.hero #about {
+  font-size: 1.9rem;
+  position: absolute;
+  top: 700px;
+  left: 1600px;
+}
+.hero #about:hover {
+  color: rgb(77, 77, 0);
+}
+
+.dunes {
+  background-image: url(/assets/dunes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dunes a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.dunes a:hover {
+  color: rgb(77, 77, 0);
+}
+.dunes .text {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dunes .text p {
+  color: white;
+  font-size: 2rem;
+}
+.dunes .options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+}
+.dunes .options a {
+  font-size: 2rem;
+  border: 5px solid black;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.377);
+}
+.dunes .options a:hover {
+  border: 5px solid white;
+  color: rgb(255, 255, 255);
+}
+
+.about-text {
+  background-image: url(/assets/dunes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.about-text a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.about-text a:hover {
+  color: rgb(77, 77, 0);
+}
+.about-text #about-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.about-text #about-text-content p {
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.37);
+}
+
+.go {
+  background-image: url(/assets/heroImage.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.go a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.go a:hover {
+  color: rgb(77, 77, 0);
+}
+.go #go-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.go #go-text p {
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.37);
+}
+
+.resting {
+  background-image: url(/assets/blurry.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.resting a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.resting a:hover {
+  color: rgb(77, 77, 0);
+}
+.resting #rest-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.resting #rest-text p {
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.37);
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */
