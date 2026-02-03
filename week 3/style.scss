@@ -11,19 +11,19 @@ $font:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicod
 
 // MixIns ---------------------
 @mixin dunes {
-    background-image: url(/assets/dunes.jpg);
+    background-image: url(assets/dunes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;}
 @mixin tree {
-    background-image: url(/assets/heroImage.webp);
+    background-image: url(assets/heroImage.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;}
 @mixin blur {
-    background-image: url(/assets/blurry.webp);
+    background-image: url(assets/blurry.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
