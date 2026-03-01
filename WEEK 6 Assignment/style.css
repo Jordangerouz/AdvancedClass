@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    border-bottom: 2px solid black;
+}
+#main-link {
+    color: black;
+    text-transform: lowercase;
+    font-size: 2rem;
+}
+#main-link:hover {
+    color: rgb(119, 119, 119);
+}
+
+.my-tooltip {
+     background-color: yellow;
+     border: 1px solid black;
+     color: black;
+     text-decoration: none;
+     font-size: 1.5rem;
+ }
+
+ .date {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+ }
+ h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+ }
+
+ .accord {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+ }
+ #accordion {
+    min-width: 500px;
+ }
+
+
+ .tool {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+ }
+
+ .fx {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+ }
+ #box {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+ }
